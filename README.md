@@ -2,13 +2,14 @@
 
 **Parcial 3 — Sistemas Operativos, EAFIT (2026-2)**
 
+Juan Diego Muñoz Buitrago - Samuel Serna Patiño
+
 ## Descripción
 
 MMapGuard es un prototipo académico que controla los permisos de memoria solicitados sobre **un archivo de prueba**. Desde el kernel, utiliza los hooks BPF LSM `mmap_file` y `file_mprotect` para permitir mapeos de lectura y rechazar mapeos escribibles del archivo protegido. Las decisiones se muestran en la terminal como eventos de auditoría.
 
 El archivo se identifica por su **inodo y dispositivo**, no solo por su nombre. La política se aplica a los mapeos evaluados por esos hooks, sin reemplazar los permisos normales de Linux.
 
-> **Aviso:** es una demostración académica. No usar para proteger archivos confidenciales reales.
 
 ## Requisitos
 
