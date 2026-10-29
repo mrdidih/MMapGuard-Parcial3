@@ -1,0 +1,10 @@
+# Archivos que se generan durante la compilación
+/build/
+
+# Archivos locales creados por las pruebas
+/archivo_normal.txt
+/archivo_protegido.txt
+
+# Metadatos de descargas de Windows y archivos comprimidos locales
+*:Zone.Identifier
+/*.zip

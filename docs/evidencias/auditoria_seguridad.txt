@@ -1,0 +1,8 @@
+MMapGuard v2 activo. Archivo protegido: /home/juand/MMapGuard_v2/archivo_protegido.txt
+Se permiten mapeos de lectura y se deniegan mapeos escribibles.
+Detener con Ctrl+C.
+
+[mmap] archivo protegido, proceso=mmap_test PID=2648 UID=1000 permisos=R-- resultado=PERMITIDO
+[mmap] archivo protegido, proceso=mmap_test PID=2649 UID=1000 permisos=RW- resultado=DENEGADO
+[mmap] archivo protegido, proceso=mmap_test PID=2650 UID=1000 permisos=R-- resultado=PERMITIDO
+[mprotect] archivo protegido, proceso=mmap_test PID=2650 UID=1000 permisos=RW- resultado=DENEGADO

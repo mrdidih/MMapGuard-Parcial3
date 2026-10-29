@@ -1,0 +1,9 @@
+MMapGuard: benchmark (mmap + primer acceso + munmap)
+Archivo: archivo_normal.txt | Iteraciones por ronda: 10000 | Rondas: 5
+Ronda | microsegundos/operacion | fallos menores | fallos mayores
+    1 |                   6.996 |          10000 |              0
+    2 |                   7.526 |          10000 |              0
+    3 |                   6.618 |          10000 |              0
+    4 |                   6.585 |          10000 |              0
+    5 |                   6.602 |          10000 |              0
+Checksum de control: 4545000

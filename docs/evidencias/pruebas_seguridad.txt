@@ -1,0 +1,13 @@
+\n> ./build/mmap_test ro archivo_protegido.txt
+mmap de lectura PERMITIDO; primer byte='Z'.
+[OK] codigo de salida 0 (esperado: 0)
+\n> ./build/mmap_test rw archivo_protegido.txt
+mmap DENEGADO: Permission denied
+[OK] codigo de salida 2 (esperado: 2)
+\n> ./build/mmap_test upgrade archivo_protegido.txt
+mprotect DENEGADO: Permission denied
+[OK] codigo de salida 2 (esperado: 2)
+\n> ./build/mmap_test rw archivo_normal.txt
+mmap de escritura PERMITIDO; cambio guardado.
+[OK] codigo de salida 0 (esperado: 0)
+\nPruebas completadas. El monitor BPF debio estar activo durante ellas.
